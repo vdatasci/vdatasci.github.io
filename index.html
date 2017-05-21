@@ -1,22 +1,96 @@
+<style>
+  body { font-family: "Lucida Sans Unicode"; }
+  a#navbar {font-family: "Courier New"; font-size: 175%;}
+  div.boxify {
+		width: 90%; 
+		padding: 40px; 
+		margin: 0 auto; 
+		background: #fff;
+    position: fixed;
+    z-index: 999;
+    top: 10%;
+    width: 65%;
+    left: 50%; margin-right: -50%; transform: translate(-50%, -50%);
+		box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+		}
+	div.centerit {
+		padding: 40px; 
+		margin: 0 auto; 
+		}
+	div.sellify {
+		width: 66.6%;
+		float: center;
+		position: relative;		
+		padding: 40px; 
+		margin: 0 auto; 
+		background: #fff; 
+		box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+		}
+	code { 
+		font-family: monospace;
+		background: #f7f7f7;
+		border-color: #dddddd;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 3px;
+		padding: 0px 4px 0px 4px;
+		}
+	.button {
+		background-color: #4CAF50;
+		font-family: monospace;
+		background: #eeeeee;
+		border-color: #cccccc;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 1px;
+		padding: 1.5px 4px 1.5px 4px;
+		cursor: pointer;
+		}
+</style>
+
+
+
 <body>
-<h1>Hello World!</h1>
 <p>
-<p id="demo"></p>
-<p>
-...test
+<div class="boxify">
+<a id="navbar" href="index.html">Home</a> \ 
+<a id="navbar" href="navbar.html">Navbar</a> \
+</div>`
+
+<br> &nbsp </br>
+
+<div class="centerit">
+
+	<div class="sellify">
+		Framework</br>
+	</div>
+	<div class="sellify">
+		<p>
+		https://jsfiddle.net/jvoss/d8s6ydxt/
+		</br>
+		https://jsfiddle.net/jvoss/pL4vdz9f/
+		</br>
+		https://jsfiddle.net/jvoss/rk5k6s1o/
+		</p>
+	</div>
+		<div class="sellify">
+	<p id="demo"></p>
+	</div>
+	<div class="sellify">
+        Code:</br>
+		<code> def lsearch(term, my_list):
+			for i in range(len(my_list)):
+			  if my_list[i] == term:
+				return i
+			  return None</code>
+	</div>
+
+</div>
+
 </p>
-
-
-<p>
-https://jsfiddle.net/jvoss/d8s6ydxt/
-</br>
-https://jsfiddle.net/jvoss/pL4vdz9f/
-</br>
-https://jsfiddle.net/jvoss/rk5k6s1o/
-</p>
-
 
 </body>
+
 
 <script>
 var obj = JSON.parse('{ "employees" : [{ "firstName":"John" , "lastName":"Doe" },{ "firstName":"Anna" , "lastName":"Smith" },{ "firstName":"Peter" , "lastName":"Jones" } ]}');
